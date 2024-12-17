@@ -1,17 +1,42 @@
 {
-  "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true,
+    "noEmit": true,
+    "module": "ES2022",
+    "target": "ES2022",
+    "lib": ["DOM", "DOM.Iterable"],
+    "moduleResolution": "Node10",
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "useUnknownInCatchVariables": true,
+    "exactOptionalPropertyTypes": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowUnreachableCode": false,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "allowImportingTsExtensions": true,
+    "allowJs": false,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-native",
+    "baseUrl": "./",
     "paths": {
-      "@/*": [
-        "./*"
-      ]
-    }
+      "@api/*": ["src/api/*"],
+      "@screens/*": ["src/screens/*"],
+      "@components/*": ["src/components/*"],
+      "@customTypes/*": ["src/customTypes/*"],
+      "@styles/*": ["src/styles/*"],
+      "@hooks/*": ["src/hooks/*"]
+    },
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
   },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    ".expo/types/**/*.ts",
-    "expo-env.d.ts"
-  ]
+  "include": ["src", ".eslintrc.json", "App.tsx", "declarations.d.ts"],
+  "exclude": ["node_modules"],
+  "extends": "expo/tsconfig.base"
 }

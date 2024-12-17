@@ -1,0 +1,32 @@
+{
+  "1": {
+    "name": "Guillevic",
+    "teamMates": [
+      {
+        "id": 11,
+        "name": "Marie",
+        "imagePath": "./../assets/images/icon.png"
+      },
+      {
+        "id": 12,
+        "name": "Pierre",
+        "imagePath": "./../assets/images/icon.png"
+      },
+      {
+        "id": 13,
+        "name": "Caro",
+        "imagePath": "./../assets/images/icon.png"
+      },
+      {
+        "id": 14,
+        "name": "Annick",
+        "imagePath": "./../assets/images/icon.png"
+      },
+      {
+        "id": 15,
+        "name": "Richard",
+        "imagePath": "./../assets/images/icon.png"
+      }
+    ]
+  }
+}
